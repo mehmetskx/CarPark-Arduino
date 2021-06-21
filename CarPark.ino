@@ -9,6 +9,8 @@ int txPin = 11;
 int dht11Pin = 2;
 
 String ip = "184.106.153.149";
+#define DEBUG true
+dht11 DHT11;
 
 const int trigPin1 = 5, echoPin1 = 6;
 long uzaklik1;
@@ -16,9 +18,6 @@ long sure1;
 const int trigPin2 = 3, echoPin2 = 4;
 long uzaklik2;
 long sure2;
-
-#define DEBUG true
-dht11 DHT11;
 
 SoftwareSerial esp(rxPin, txPin);
 
